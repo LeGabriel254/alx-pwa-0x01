@@ -1,3 +1,4 @@
+
 import { ReactNode } from "react";
 
 export interface ComponentProps {
@@ -7,7 +8,6 @@ export interface ComponentProps {
 export interface ButtonProps {
   title: string
   action?: () => void
-  className?: string;
 }
 
 export interface MovieProps {
@@ -30,10 +30,8 @@ interface ReleaseYear {
 }
 
 export interface MoviesProps {
-  title: string;
-  imageUrl: string;
-  description: string;
-  releaseDate: string;
-  imdbUrl: string;
-  rating: string;
+  id: string
+  primaryImage: PrimaryImage
+  titleText: TitleText
+  releaseYear: ReleaseYear
 }
